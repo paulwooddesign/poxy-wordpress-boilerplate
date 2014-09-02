@@ -5,8 +5,8 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 // Options Framework
 ////////////////////////////////////////////
 if ( !function_exists( 'optionsframework_init' ) ) {
-    define('OPTIONS_FRAMEWORK_URL', STYLESHEETPATH . '/bower_components/options-framework-theme-master/inc/');
-    define( 'OPTIONS_FRAMEWORK_DIRECTORY', get_bloginfo('stylesheet_directory') . '/bower_components/options-framework-theme-master/inc/' );
+    define('OPTIONS_FRAMEWORK_URL', STYLESHEETPATH . '/bower_components/options-framework-theme/inc/');
+    define( 'OPTIONS_FRAMEWORK_DIRECTORY', get_bloginfo('stylesheet_directory') . '/bower_components/options-framework-theme/inc/' );
     require_once (OPTIONS_FRAMEWORK_URL . 'options-framework.php');
 }
 /*
@@ -36,7 +36,7 @@ jQuery(document).ready(function() {
 <?php
 }
 
-// Load Mr MetaBox 
+// Load Mr MetaBox
 if(!class_exists('mrMetaBox')) {
   define('MRMETABOX_URL', STYLESHEETPATH . '/bower_components/mr-meta-box-master/');
   require_once(MRMETABOX_URL . 'mr-meta-box.php');
@@ -46,7 +46,7 @@ if(!class_exists('mrMetaBox')) {
 
 //require_once("admin/Tax-meta-class/Tax-meta-class.php");
 
-// Install Theme Plugins, Menus, 
+// Install Theme Plugins, Menus,
 require_once ('admin/_INSTALL/theme-install.php');
 
 // Multiple Featured Images
@@ -105,7 +105,7 @@ if(of_get_option('poxy_faq_post_type')) {
 require_once('admin/plugins/post-type-faq.php');
 }
 
-if(of_get_option('poxy_event_post_type')) { 
+if(of_get_option('poxy_event_post_type')) {
 require_once('admin/plugins/post-type-events.php');
 }
 
@@ -159,10 +159,10 @@ function poxy_load_scripts() {
     //wp_enqueue_style('poxy', get_bloginfo('template_url').'/poxy.css', false, '1.0', 'all' );
 
 
-    wp_deregister_script('jquery'); 
-    //wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js', false, '1.9.1'); 
-    wp_register_script('jquery', '//code.jquery.com/jquery-2.0.0.min.js', false, '2.0.0'); 
-    //wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js', false, '1.11.0'); 
+    wp_deregister_script('jquery');
+    //wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js', false, '1.9.1');
+    wp_register_script('jquery', '//code.jquery.com/jquery-2.0.0.min.js', false, '2.0.0');
+    //wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js', false, '1.11.0');
 
 
     wp_register_script( 'modernizr', '//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js', false, '2.6.2' );
@@ -171,33 +171,33 @@ function poxy_load_scripts() {
 
     $poxy_dev_styles = of_get_option('poxy_dev_styles');
     if($poxy_dev_styles == false) {
-        global $user_ID; 
+        global $user_ID;
         if( $user_ID ) {
             if( current_user_can('level_10') ) {
             wp_enqueue_style('dev_css', get_bloginfo('template_url').'/assets/dev.css', false, '1.0', 'all' );
-            //wp_enqueue_script('ggs_grid', get_bloginfo('template_url').'/admin/_DEV/GGS.js', array('jquery'), '1.0.0', true); 
+            //wp_enqueue_script('ggs_grid', get_bloginfo('template_url').'/admin/_DEV/GGS.js', array('jquery'), '1.0.0', true);
             }
         }
     }
 
-    //wp_enqueue_script('easing', get_bloginfo('stylesheet_directory').'/js/lib/jquery.easing.1.3.js', array('jquery'), '1.3', true); 
+    //wp_enqueue_script('easing', get_bloginfo('stylesheet_directory').'/js/lib/jquery.easing.1.3.js', array('jquery'), '1.3', true);
 
-    // wp_enqueue_script('classie', get_bloginfo('stylesheet_directory').'/js/lib/classie.js', array('jquery'), '1.0', true); 
-    // wp_enqueue_script('mlpushmenu', get_bloginfo('stylesheet_directory').'/js/lib/mlpushmenu.js', array('jquery'), '1.0', true); 
+    // wp_enqueue_script('classie', get_bloginfo('stylesheet_directory').'/js/lib/classie.js', array('jquery'), '1.0', true);
+    // wp_enqueue_script('mlpushmenu', get_bloginfo('stylesheet_directory').'/js/lib/mlpushmenu.js', array('jquery'), '1.0', true);
 
-    // wp_enqueue_script('jquery_custom_ui', get_bloginfo('stylesheet_directory').'/js/lib/jquery-ui-1.8.20.custom.min.js', array('jquery'), NULL, true); 
-    // wp_enqueue_script('accordion', get_bloginfo('stylesheet_directory').'/js/lib/jquery.accordion-a-1.1.js', array('jquery'), NULL, true); 
-    //wp_enqueue_script('accordion', get_bloginfo('stylesheet_directory').'/js/lib/jquery.scrollTo.min.js', array('jquery'), NULL, true); 
-    // wp_enqueue_script('instafeed', get_bloginfo('stylesheet_directory').'/assets/js/lib/instafeed.min.js', array('jquery'), NULL, true);  
-    // wp_enqueue_script('slick_carousel', get_bloginfo('stylesheet_directory').'/assets/js/lib/slick.min.js', array('jquery'), NULL, true); 
+    // wp_enqueue_script('jquery_custom_ui', get_bloginfo('stylesheet_directory').'/js/lib/jquery-ui-1.8.20.custom.min.js', array('jquery'), NULL, true);
+    // wp_enqueue_script('accordion', get_bloginfo('stylesheet_directory').'/js/lib/jquery.accordion-a-1.1.js', array('jquery'), NULL, true);
+    //wp_enqueue_script('accordion', get_bloginfo('stylesheet_directory').'/js/lib/jquery.scrollTo.min.js', array('jquery'), NULL, true);
+    // wp_enqueue_script('instafeed', get_bloginfo('stylesheet_directory').'/assets/js/lib/instafeed.min.js', array('jquery'), NULL, true);
+    // wp_enqueue_script('slick_carousel', get_bloginfo('stylesheet_directory').'/assets/js/lib/slick.min.js', array('jquery'), NULL, true);
     // wp_enqueue_script('royalslider', get_bloginfo('stylesheet_directory').'/assets/js/lib/royalslider/jquery.royalslider.min.js', array('jquery'), NULL, true);
 
 
     //Mighty Slider
-    // wp_enqueue_script('just_touch', get_bloginfo('stylesheet_directory').'/assets/js/lib/jquery.mobile.just-touch.js', array('jquery'), '1.3', true); 
-    // wp_enqueue_script('easing', get_bloginfo('stylesheet_directory').'/assets/js/lib/jquery.easing.1.3.js', array('jquery'), '1.3', true); 
-    // wp_enqueue_script('mightyslider', get_bloginfo('stylesheet_directory').'/assets/js/lib/mightyslider.js', array('jquery'), '1.0', true); 
-    // wp_enqueue_script('custom', get_bloginfo('stylesheet_directory').'/assets/js/lib/custom.js', array('jquery'), '1.0', true); 
+    // wp_enqueue_script('just_touch', get_bloginfo('stylesheet_directory').'/assets/js/lib/jquery.mobile.just-touch.js', array('jquery'), '1.3', true);
+    // wp_enqueue_script('easing', get_bloginfo('stylesheet_directory').'/assets/js/lib/jquery.easing.1.3.js', array('jquery'), '1.3', true);
+    // wp_enqueue_script('mightyslider', get_bloginfo('stylesheet_directory').'/assets/js/lib/mightyslider.js', array('jquery'), '1.0', true);
+    // wp_enqueue_script('custom', get_bloginfo('stylesheet_directory').'/assets/js/lib/custom.js', array('jquery'), '1.0', true);
 
 
     //Parallax Nav
@@ -206,8 +206,8 @@ function poxy_load_scripts() {
      //wp_enqueue_script('toggle_tabs', get_bloginfo('stylesheet_directory').'/assets/js/lib/jquery.cbpContentSlider.js', array('jquery'), '1.0', true);
 
     //Load Minified Styles / lower HTTP reqests this way
-    wp_enqueue_script('poxy_js', get_bloginfo('stylesheet_directory').'/assets/scripts-ck.js', array('jquery'), '1.0', true); 
-    //wp_enqueue_script('poxy_js', get_bloginfo('stylesheet_directory').'/js/scripts.js', array('jquery'), '1.0', true); 
+    wp_enqueue_script('poxy_js', get_bloginfo('stylesheet_directory').'/assets/scripts-ck.js', array('jquery'), '1.0', true);
+    //wp_enqueue_script('poxy_js', get_bloginfo('stylesheet_directory').'/js/scripts.js', array('jquery'), '1.0', true);
     wp_localize_script( 'poxy_js', 'MyAjax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );
 
 
@@ -278,8 +278,8 @@ function child_manage_woocommerce_styles() {
 ////////////////////////////////////////////
 //add_action('wp_footer','poxy_footer');
 
-function poxy_footer() {     
-    wp_reset_query();   
+function poxy_footer() {
+    wp_reset_query();
     global $wp_query;
     global $post;
 
@@ -292,13 +292,13 @@ function poxy_footer() {
 // Load Dev UI
 ////////////////////////////////////////////
 add_action('wp_footer','poxy_dev_ui');
-function poxy_dev_ui() { 
+function poxy_dev_ui() {
     $poxy_dev_styles = of_get_option('poxy_dev_styles');
     if($poxy_dev_styles == false) {
-        global $user_ID; 
+        global $user_ID;
         if( $user_ID ) {
             if( current_user_can('level_10') ) {
-                get_template_part('admin/_DEV/dev'); 
+                get_template_part('admin/_DEV/dev');
             }
         }
     }
@@ -312,7 +312,7 @@ function poxy_dev_ui() {
 
 
 ////////////////////////////////////////////
-// Show Future Posts 
+// Show Future Posts
 ////////////////////////////////////////////
 add_filter('the_posts', 'show_all_future_posts');
 
@@ -333,30 +333,30 @@ function show_all_future_posts($posts)
 /////////////////////////////////////////////////////////////
 
 function poxy_comments($comment, $args, $depth) {
-    $GLOBALS['comment'] = $comment; ?>      
-    <li id="li-comment-<?php comment_ID() ?>">      
-        
-        <div class="comment <?php echo get_comment_type(); ?>" id="comment-<?php comment_ID() ?>">                      
-            
-            <?php echo get_avatar($comment,'70',get_bloginfo('template_url').'/images/default_avatar.png'); ?>          
-                
+    $GLOBALS['comment'] = $comment; ?>
+    <li id="li-comment-<?php comment_ID() ?>">
+
+        <div class="comment <?php echo get_comment_type(); ?>" id="comment-<?php comment_ID() ?>">
+
+            <?php echo get_avatar($comment,'70',get_bloginfo('template_url').'/images/default_avatar.png'); ?>
+
             <h5><?php comment_author_link(); ?></h5>
             <span class="date"><?php comment_date(); ?></span>
-                
+
             <?php if ($comment->comment_approved == '0') : ?>
                 <p><span class="message"><?php _e('Your comment is awaiting moderation.', 'poxy'); ?></span></p>
             <?php endif; ?>
-                
-            <?php comment_text() ?>             
-                
+
+            <?php comment_text() ?>
+
             <?php
             if(get_comment_type() != "trackback")
                 comment_reply_link(array_merge( $args, array('add_below' => 'comment','reply_text' => '<span>'. __('Reply', 'poxy') .'</span>', 'login_text' => '<span>'. __('Log in to reply', 'poxy') .'</span>', 'depth' => $depth, 'max_depth' => $args['max_depth'])))
-            
+
             ?>
-                
+
         </div><!-- end comment -->
-            
+
 <?php
 }
 
