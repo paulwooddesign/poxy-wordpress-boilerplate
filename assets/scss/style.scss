@@ -1,0 +1,27 @@
+/*!
+Theme Name: Poxy Boilerplate
+Theme URI: http://workhorse45.com
+Description: Custom Wordpress Theme
+Version: 0.0.0
+Author: Paul Wood
+Author URI: http://workhorse45.com
+Tags: Responsive Poxy
+*/
+
+
+//Main Styles
+// @import "bourbon";
+// @import "compass/reset";
+// @import "compass/utilities/general/clearfix";
+@import "compass";
+@import "compass/css3";
+
+
+//@import "poxy_settings";
+@import "../../bower_components/normalize-scss/normalize";
+@import "../../bower_components/poxy/poxy/poxy";
+//@import "theme_settings";
+
+///////////////////////////
+// Theme Imports
+///////////////////////////
