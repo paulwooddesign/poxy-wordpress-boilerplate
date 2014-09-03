@@ -1,0 +1,92 @@
+///////////////////////////////////////
+// Small Header
+///////////////////////////////////////
+
+#header-small-nav{padding:$spacer/2 0 $cols1; position:relative; background:$gold;}
+#header-small-nav ul{float:right !important;}
+
+#menu-header-container{
+  margin-left:$spacer;
+ li a{color: $white !important; font-weight:normal;}
+ li a:hover {color: $emphasis !important; }
+}
+
+
+//Small Header Nav/////////////////////
+#menu-header-container{ padding:0; float:left; position:absolute; top:0; z-index:9; font-size:100%; width:100%;
+
+}
+
+#top-bar {
+	background-color: #ffffff;
+}
+//#top-bar{border-bottom: solid $mc90 1px; }
+#top-bar nav{float:right; margin-right:$spacer; margin-top:$spacer/2; margin-bottom:$spacer/3;}
+#top-bar .full-width nav{margin-right:0;}
+#top-bar .copy-width nav{margin-right:0;}
+
+
+//#top-bar .social-icons {border-right: solid $header_border_color 1px;}
+//#top-bar .social-icons li a{font-size:$cols1;}
+#top-bar .social-icons {padding-right:$spacer;}
+#top-bar .social-icons li {height:$cols1; width:$cols1/2; font-size:100%;}
+#top-bar .social-icons li a{height:$cols1; width:$cols1/2; font-size:100%;}
+#top-bar .social-icons li a span{font-size:$cols1*0.5; padding:$spacer/4 !important; display:block;}
+
+//#top-bar .social-icons li a:hover{background:$emphasis;}
+#top-bar .site-width {display:block;}
+
+
+.menu-header-container{color: $main_text_color;  }
+.menu-header-container ul{background:transparent; float:right; margin:0 0 0 $spacer/4 !important; display:block;}
+.menu-header-container li{float:left;}
+.menu-header-container li a{text-transform:uppercase !important; border-left: solid $header_border_color 1px; font-weight:nomral; padding:0 $spacer/4; float:left; font-size:100%; letter-spacing: 0.2em; font-size: 0.75em;}
+.menu-header-container li:first-child a{border:none;}
+.menu-header-container li a:before {content: ""; }
+.menu-header-container li:first-child  a:before {content: "";}
+.menu-header-container .small-nav {float:left !important}
+
+
+.wp-tagline {
+
+.usa-flag {
+	top:$spacer/8;
+	position:absolute;
+	width:$spacer;
+	height:$spacer;
+	background: url(images/usa_flag.png) left center no-repeat;
+	background: url(images/chimera_icon.png) left center no-repeat;
+	@include background-size(contain);
+
+}
+.made-in-usa{margin-left: $cols1;}
+}
+
+.made-in-usa{height:$spacer; display:inline-block;}
+
+/////////////////////////////
+// Social Icons
+/////////////////////////////
+.social-icons{
+float:left;
+height:auto;
+li{position:relative !important; opacity: 1;  float:left; line-height:1;};
+li:hover{opacity: 0.95};
+}
+
+#top-bar .social-icons{
+float:right;
+height:auto;
+li{position:relative !important; opacity: 1;  float:left; line-height:1;};
+li:hover{opacity: 0.95};
+}
+
+
+#top-bar .wp-tagline{margin-top:$s4;}
+#top-bar .full-width .wp-tagline{margin-left:$spacer;}
+
+.full-width .wp-tagline {margin-left:$spacer;}
+.full-width .right {margin-right:$spacer;}
+.full-width .left {margin-left:$spacer;}
+
+

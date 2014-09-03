@@ -1,0 +1,258 @@
+//////////////////////////////////////////////////////////////////////
+// Colors
+/////////////////////////////////////////////////////////////////////
+
+
+//////////////////////////////////////////////////////////////////////
+// Main Layout
+/////////////////////////////////////////////////////////////////////
+$main_color_offset:0%;
+$main_color_offset_hover:20%;
+
+//border-radius
+$thumb_radius: 0%;
+
+//////////////////////////////////////////////////////////////////////
+// Colors
+/////////////////////////////////////////////////////////////////////
+$main_color:black;
+// $emphasis_base_color: #ef5e2a;
+$emphasis_base_color: rgba(0, 120, 201, 1);
+$emphasis_base_color: #c05e43;
+$emphasis: lighten($emphasis_base_color, $main_color_offset);
+$main_text_color: #000;
+$emphasis_dark: darken($emphasis_base_color, 20%);
+$accent: #c05e43;
+
+// Colors
+$white: #fff;
+$black: #121313;
+$orange:#f8981d;
+$yellow:#febe10;
+$green:#166065;
+$blue:#002855;
+$teal:#00b09a;
+$purple: #bcc7e3;
+$red:#c65025;
+$light-blue:#a0cced;
+$tan: #f7f2eb;
+$brown: #a46935;
+$dark_brown: #522d1d;
+$dark_green: #3b5615;
+$gold: $emphasis;
+$dark_tan: #efe9dc;
+
+
+//////////////////////////////////////////////
+// Background Properties
+//////////////////////////////////////////////
+$header-background-color: #fff;
+$header_background_color:lighten(#ececca, 10%);
+
+$header_bg:transparent;
+
+$meat_bg:lighten(#ececca, 12%);
+$odd_bg:darken($meat_bg, 0%);
+$even_bg:darken($meat_bg, 2%);
+
+$hdd_menu_bg:lighten($meat_bg, 2%);
+
+$footer-bg: #222;
+$footer_copywrite_bg:#222;
+
+
+//////////////////////////////////////////////////////////////////////
+// Font Colors
+/////////////////////////////////////////////////////////////////////
+//$body_color: lighten($main_text_color, 50%);
+$body_color: rgba(0,0,0, 0.87);
+$body_color:#45150b;
+$page_head_color:$white;
+$heading_color: rgba(0,0,0, .6);
+$container_color: lighten($main_text_color, 0%);
+
+//links
+$a_color:$emphasis;
+$a_color_hover:lighten($emphasis, 10%);
+
+
+// Main Nav
+$main_nav_color: $white;
+$main_nav_color_hover:$white;
+$main_nav_bg_color_hover: darken($header_background_color, 10%);
+
+// Top Nav Bar
+$top_nav_color: $body_color;
+$top_nav_color_hover: darken($body_color, 10%);
+
+
+//blog
+$meta_color:lighten($main_text_color, 0%);
+
+
+// Footer
+$footer_color: lighten($body_color, 0%);
+
+// Footer Nav
+$footer_nav_color: $body_color;
+$footer_nav_color_hover: lighten($accent, 20%);
+
+
+// Footer Nav
+$header_nav_color: $body_color;
+$header_nav_color_hover: lighten($accent, 20%);
+
+
+//////////////////////////////////////////////
+// Boarder Colors
+//////////////////////////////////////////////
+//$main_boarder_color:rgba(255, 255, 255, .1);
+
+$main_top_border_color:$meat_bg;
+$main_border_color: rgba(0,0,0, .08);
+//$main_border_color: transparent;
+//$main_border_background_image: url(images/line_spacer_bg.png);
+$main_border_background_image: none;
+
+$header_top_border_color:$header_bg;
+$header_border_color: rgba(0,0,0, .1);
+//$header_border_color:transparent;
+//$header_border_background_image:url(images/line_spacer_bg.png);
+$header_border_background_image:none;
+
+$footer_top_border_color:$footer_bg;
+$footer_border_color: rgba(255,255,255, .1);
+//$footer_border_color:transparent;
+//$footer_border_background_image:url(images/line_spacer_bg.png);
+$footer_border_background_image:none;
+
+$html_bg_image: url(images/bg2.png);
+
+//$odd_bg: #fff  url(_/images/bg-odd.jpg) repeat;
+$link_color:$emphasis;
+$link_color_hover:$tan;
+
+
+$header_bg:transparent;
+//$header_bg: url(_/images/mochaGrunge.png) top repeat;
+
+$header_nav_bg:transparent;
+//$meta_color:$cd6;
+$pageHead_bg_color:$meat_bg;
+$pageHead_copy_bg: transparent;
+$pageHead_span_bg: transparent;
+
+$description_color: $white;
+
+//$mission_bg:lighten($emphasis_base_color, 63%);
+$footer_bg:lighten($main_text_color, 20%);
+//$footer_bg:darken($white, 5%);
+$footer_bg: url(images/fabric.png);
+$footer_bg: transparent;
+$footer_mission_bg:darken($white, 10%);
+//$footer_bg:lighten($emphasis_base_color, 63%);
+
+//masks
+
+//$m1:url(../images/ui/text_mask_2.png);
+$m1:none;
+
+
+
+
+
+$copywrite-bg-color:transparent;
+
+
+$toggle_bg: url(images/toggle_bg.jpg) repeat top center;
+
+$bar_bg: url(images/bar_bg3.png) repeat top center;
+$inset_bar: url(images/bar_bg4.jpg) repeat top center;
+$tab_section_bg: transparent;
+$main_toggle_bar_bg: transparent;
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+//  Fonts
+/////////////////////////////////////////////////////////////////////
+
+$body-font: "Helvetica Neue", Helvetica, "pragmatica-web", Arial, sans-serif;
+$heading_font: 'attentica_4fultralight', "Helvetica Neue", Helvetica, "pragmatica-web", Arial, sans-serif;
+$mission_font:  'Futura Book', "Helvetica Neue", Helvetica, "pragmatica-web", Arial, sans-serif;
+$main_nav_font: 'Futura Book', "Helvetica Neue", Helvetica, "pragmatica-web", Arial, sans-serif;
+$f1: 'Futura Book', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$f2: 'just_the_way_you_areregular','Raleway', 'Arial', sans-serif;
+$handwriting: 'just_the_way_you_areregular','Raleway', 'Arial', sans-serif;
+$f3: 'lhf_viennaregular', "Helvetica Neue", Helvetica, "pragmatica-web", Arial, sans-serif;
+$f4: "myriad_pro_condbold", "Helvetica Neue", Helvetica, "pragmatica-web", Arial, sans-serif;$f5: "Courier New", Courier, serif;
+
+//Headings
+$ph_font: $f1;
+$h1_font: $heading_font;
+$h2_font: $heading_font;
+$h3_font: $heading_font;
+$h4_font: $heading_font;
+$h5_font: $heading_font;
+$h6_font: $heading_font;
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////
+// Compass Transition Defaults
+/////////////////////////////////////////////////////////////////////
+$default-transition-property : all;
+$default-transition-duration : 0.2s;
+$default-transition-function : false;
+$default-transition-delay    : false;
+$default-transition-timing-function : ease-in-out;
+
+// Background Size
+$default-background-size : cover;
+
+//radius
+$default-border-radius : 3px;
+
+//box Shadow Defaults
+$default-box-shadow-color: rgba(0,0,0,0.25);
+$default-box-shadow-h-offset: 0px;
+$default-box-shadow-v-offset: 3px;
+$default-box-shadow-blur: 8px;
+$default-box-shadow-spread:false;
+$default-box-shadow-inset: false;
+
+
+//////////////////////////////////////////////////////////////////////
+// Text Shadow
+/////////////////////////////////////////////////////////////////////
+$default-text-shadow-color: rgba(#000, 0.4);
+$default-text-shadow-blur: 5px;
+$default-text-shadow-v-offset: 1px;
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////
+// $Compass Extends
+/////////////////////////////////////////////////////////////////////
+%transition {@include transition(1s all ease-in-out);}
+
+//control our vertical rhythm
+%rhythm { margin-top: 0; margin-bottom: 24 * 1rem; }

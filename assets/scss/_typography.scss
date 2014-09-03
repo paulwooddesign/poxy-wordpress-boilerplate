@@ -1,0 +1,152 @@
+* {
+	-moz-hyphens: manual !important;
+	-webkit-hyphens: none !important;
+	word-break:keep-all !important;
+	word-break:keep-all !important;
+	-ms-word-break: keep-all !important;
+
+	outline: 0;
+	-webkit-appearance: none;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-osx-font-smoothing: grayscale !important;
+}
+
+
+blockquote .author{font-weight: 800; margin-left:$spacer;}
+
+
+blockquote {
+	margin:0 10%;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+  color: $gold;
+  content: open-quote;
+  font-size: 3em;
+  line-height: 0.1em;
+  margin-right: 0.1em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+}
+
+
+
+//////////////////////////////////////////////////////////////////////
+// Bullets Paragraphs
+/////////////////////////////////////////////////////////////////////
+p{line-height: 1.825em; letter-spacing: 0.05em; margin-bottom:$sy;  }
+
+.custom-bullets li, p {font-size: (14px) / $em;}
+.custom-bullets li, p {@include zone(E) { font-size: (12px) / $em; }}
+.custom-bullets li, p {@include zone(D) { font-size: (14px) / $em; }}
+.custom-bullets li, p {@include zone(C) { font-size: (14px) / $em; }}
+.custom-bullets li, p {@include zone(B) { font-size: (16px) / $em; }}
+.custom-bullets li, p {@include zone(A) { font-size: (16px) / $em; }}
+
+
+
+header a{color:$top_nav_color;}
+header a:hover{color:$top_nav_color_hover;}
+
+
+h1, h2, h3, h4, h5, h6 {
+font-family:$heading_font;
+font-weight:500;
+text-transform:uppercase;
+letter-spacing: 1px;
+//text-transform:capitalize;
+
+
+}
+
+
+h1 a, h2 a, h3 a{
+font-weight:500;
+text-transform:uppercase;
+color: rgba(0,0,0,0.87);
+}
+
+
+.accent-color{color: $emphasis;}
+
+
+//#page-head h1 {color: $page_head_color; font-family:$ph_font; font-weight:800 !important; line-height:.88;}
+//#page-head-banner h1 {color: $page_head_color; font-weight:800 !important; position:relative;}
+#page-head-banner .sub-head{color:$emphasis;}
+//#page-head-banner .description{color:$white;}
+
+
+
+
+
+
+//Override User Agent CSS
+h1, h2, h3, h4, h5{
+//letter-spacing: 0.03em;
+-moz-hyphens: manual !important;
+-webkit-hyphens: none !important;
+word-break:keep-all !important;
+-ms-word-break: keep-all !important;
+//-webkit-font-smoothing: antialiased !important;
+//text-rendering: optimizeLegibility;
+//text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+-webkit-font-smoothing: antialiased;
+-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
+text-shadow: rgba(0,0,0,.01) 0 0 1px;
+//text-transform:capitalize;
+//-webkit-text-stroke: 0.35px;
+//transform: translate3d(0, 0, 0);
+//font-weight:bold;
+}
+
+p{line-height: 1.825em; letter-spacing: 0.05em; margin-bottom:$spacer;  }
+
+
+a{color:$a_color; text-decoration:none;}
+a:hover{color:$a_color_hover;}
+
+
+// /* Icon font for arrow icons */
+// @font-face {
+// 	font-family: 'icomoon';
+// 	src:url('fonts/icomoon_arrows/icomoon.eot');
+// 	src:url('fonts/icomoon_arrows/icomoon.eot?#iefix') format('embedded-opentype'),
+// 		url('fonts/icomoon_arrows/icomoon.woff') format('woff'),
+// 		url('fonts/icomoon_arrows/icomoon.ttf') format('truetype'),
+// 		url('fonts/icomoon_arrows/icomoon.svg#icomoon') format('svg');
+// 	font-weight: normal;
+// 	font-style: normal;
+// } /* Iconfont by Icomoon http://icomoon.io/ */
+
+
+// /* Icon font for arrow icons */
+// @font-face {
+// 	font-family: 'fontello';
+// 	src:url('fonts/ui/fontello.eot');
+// 	src:url('fonts/ui/fontello.eot?#iefix') format('embedded-opentype'),
+// 		url('fonts/ui/fontello.woff') format('woff'),
+// 		url('fonts/ui/fontello.ttf') format('truetype'),
+// 		url('fonts/ui/fontello.svg#fontello') format('svg');
+// 	font-weight: normal;
+// 	font-style: normal;
+// } /* Iconfont by Icomoon http://icomoon.io/ */
+//
+//
+// @font-face {
+//     font-family: 'attentica_4fultralight';
+//     src: url('fonts/attentica4f_ultralight_macroman/Attentica_4F_UltraLight-webfont.eot');
+//     src: url('fonts/attentica4f_ultralight_macroman/Attentica_4F_UltraLight-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('fonts/attentica4f_ultralight_macroman/Attentica_4F_UltraLight-webfont.woff') format('woff'),
+//          url('fonts/attentica4f_ultralight_macroman/Attentica_4F_UltraLight-webfont.ttf') format('truetype'),
+//          url('fonts/attentica4f_ultralight_macroman/Attentica_4F_UltraLight-webfont.svg#attentica_4fultralight') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+//
+// }

@@ -11,17 +11,267 @@ Tags: Responsive Poxy
 
 //Main Styles
 // @import "bourbon";
-// @import "compass/reset";
-// @import "compass/utilities/general/clearfix";
+@import "compass/reset";
+@import "compass/utilities/general/clearfix";
 @import "compass";
 @import "compass/css3";
-
-
-//@import "poxy_settings";
-@import "../../bower_components/normalize-scss/normalize";
 @import "../../bower_components/poxy/poxy/poxy";
-//@import "theme_settings";
 
 ///////////////////////////
 // Theme Imports
 ///////////////////////////
+// Global
+@import 'settings';
+@import 'typography';
+
+
+// Header
+@import 'menu-header';
+@import 'menu-main';
+@import 'menu-mobile';
+
+// Footer
+@import 'footer';
+
+///////////////////////////
+// Reset Overrids
+///////////////////////////
+//html { -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; overflow-y: scroll; }
+strong, b, strong *, b * { font-weight: bold; }
+em, i, em *, i * { font-style: italic; }
+a {@include transition();}
+#container {position:relative;}
+.full-width {width: 100%;}
+.accent-color {color: $emphasis !important;}
+
+
+
+
+///////////////////////////
+// Common Classes
+///////////////////////////
+.ba_0 .site-width:after,.ba_0 .site-width:before{display:none;}
+
+
+////////////////////////////////////
+// Global Colors / Backgrounds
+////////////////////////////////////
+$body-bg: #222;
+$body-color: #222;
+
+$header-bg: #fff;
+$header-color: #222;
+
+$meat-bg: #efefef;
+$meat-color: #222;
+
+$footer-bg: #222;
+$footer-color: #ccc;
+
+body {font-family:$body-font; background: $body-bg; color: $body-color;}
+header {background: $header-bg; color: $header-color;}
+#meat {background: $meat-bg; color: $meat-color;}
+footer, footer a{background: $footer-bg; color: $footer-color; }
+
+
+
+
+
+
+
+///////////////////////////
+// Main Section Structure
+///////////////////////////
+
+// Meat
+#meat {
+  padding:0;
+  display:block;
+
+  // .page img,
+  // .vip img,
+  // article img,
+  // .ring-finder img {width:100%; height:auto;}
+
+  img {width:100%; height:auto;}
+
+  #page-head-banner .site-width:before, #page-head-banner .site-width:after {height:1px;}
+  section .site-width{float:left;}
+
+  section .site-width:before, section .site-width:after {height:$sy; float:left; width:100%; content:""; }
+  section .site-width:before, section .site-width:after {@include zone(a) { height:$sy; }}
+	section .site-width:before, section .site-width:after {@include zone(b) { height:$sy; }}
+	section .site-width:before, section .site-width:after {@include zone(c) { height:$sy; }}
+	section .site-width:before, section .site-width:after {@include zone(d) { height:$sy/2; }}
+
+  section:before{
+    background-image: $main_border_background_image;
+    border-top: 0px solid $main_top_border_color;
+    height:1px; display:block; content:"";
+  }
+
+  //section .site-width{background:rgba(0,0,0, 1) !important; }
+  //section .site-width:before {background:rgba(0,0,0, .3) !important; float:left;}
+  section:nth-child(1):before {width:100% !important; }
+  section:nth-child(2):before {width:100% !important; }
+  //section:first-child:before, section:first-child:after{height:0;}
+  //section:last-child .site-width:after{margin-top:$cols1 !important;}
+}
+
+
+#meat:first-child section:first-child:after {width:100% !important}
+
+#meat:after, footer:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+}
+
+
+/////////////////////////////
+// Header
+/////////////////////////////
+header{
+  section{padding:0;}
+  section .site-width:before, section .site-width:after{height:0px; float:left; width:100%; content:""; }
+
+    section:before, .sub-menu:after, {
+    width: 100% !important;
+    background-color:$header_border_color;
+    background-image:$header_border_background_image;
+    border-top: 0px solid $header_top_border_color;
+    //margin-top:$spacer;
+    height:1px; display:block; content:"";
+    }
+
+
+  .sub-menu:after {
+    position:absolute;
+    bottom:0;
+    width: 100% !important;
+    background-color:$header_border_color;
+    background-image:$header_border_background_image;
+    border-top: 0px solid $header_top_border_color;
+    //margin-top:$spacer;
+    height:1px; display:block; content:"";
+  }
+}
+
+#meat section:nth-child(1):before{
+  background-color:$header_border_color !important;
+}
+
+/////////////////////////////
+// Footer
+/////////////////////////////
+footer{
+
+  #copywrite .site-width:before, #copywrite .site-width:after{height:$cols1/2;}
+
+  #copywrite{background: $footer_copywrite_bg}
+  .main p, .main a{font-size: (12px) / $em; color:$footer_color !important;}
+  section{padding:0;}
+  section .site-width:before, section .site-width:after{height:$cols1; float:left; width:100%; content:""; }
+
+  section:before{
+    width: 100% !important;
+    background-image:$footer_border_background_image;
+    border-top: 0px solid $footer_top_border_color;
+    //margin-top:$spacer;
+    height:1px; display:block; content:"";
+  }
+
+}
+
+
+
+///////////////////////////
+// Main Section Colors
+///////////////////////////
+
+#meat, footer, header{
+  // a{color:rgba(0, 0, 0, .5); @include transition();}
+  // a:hover{color:rgba(0, 0, 0, .4); @include transition();}
+
+  //h1, h2, h3, h4, h5, h6 { color: rgba(0, 0, 0, 0.87); color:$body_color;}
+  section:before, .block-menu > li > a:before {background-color:rgba(0, 0, 0, .1) !important;}
+
+  section:nth-child(odd) {
+    background-color:rgba(0, 0, 0, .02) !important;
+    background-color:rgba(255, 255, 255, .0) !important;
+    //@include box-shadow(rgba(black, 0.4) 0 0 5px);
+  }
+   section:nth-child(even) {
+     background-color:rgba(0, 0, 0, .02) !important;
+     //background-color:rgba(255, 255, 255, .02) !important;
+   }
+   // section:nth-child(odd), section:nth-child(odd) .section-head span{background-color: lighten(#000, 99%);}
+   // section:nth-child(even), section:nth-child(even) .section-head span{background-color: lighten(#000, 97%);}
+
+   //section:nth-child(odd), section:nth-child(odd) .section-head span{background-color: lighten(#000, 100%);}
+   //section:nth-child(even), section:nth-child(even) .section-head span{background-color: lighten(#000, 100%);}
+
+
+  section:nth-child(odd) .site-width{background-color:rgba(0, 0, 0, .02) !important;}
+  section:nth-child(even) .site-width {background-color:rgba(0, 0, 0, .05) !important;}
+
+  section:nth-child(odd) li:hover .front:before, section:nth-child(odd) li.active .front:before{background-color:rgba(0, 0, 0, .05) !important;}
+  section:nth-child(even) li:hover .front:before, section:nth-child(odd) li.active .front:before{background-color:rgba(0, 0, 0, .00) !important;}
+
+  section:nth-child(odd) .block-menu .front:before{background-color:rgba(0, 0, 0, .02);}
+  section:nth-child(even) .block-menu .front:before{background-color:rgba(0, 0, 0, .00);}
+
+}
+
+
+// #meat.dark, footer.dark, header.dark{
+//   color:rgba(255, 255, 255, .4);
+//   a{color:rgba(255, 255, 255, .4); @include transition();}
+//   a:hover{color:rgba(255, 255, 255, .6); @include transition();}
+//   //li:hover .front:before, li.active .front:before{background-color:rgba(255, 255, 255, .1) !important;}
+//   h1, h2, h3, h4, h5, h6 { color: rgba(255, 255, 255, .4);}
+//   section:before,  .block-menu > li > a:before, .header_line_spacer{background-color:rgba(255, 255, 255, .1) !important;}
+//   section:nth-child(odd){background-color:rgba(255, 255, 255, .02) !important;}
+//     section:nth-child(even){background-color:rgba(255, 255, 255, .05) !important;}
+//
+//     section:nth-child(odd) li:hover .front:before, section:nth-child(odd) li.active .front:before{background-color:rgba(255, 255, 255, .05) !important;}
+//   section:nth-child(even) li:hover .front:before, section:nth-child(odd) li.active .front:before{background-color:rgba(255, 255, 255, .07) !important;}
+//     section:nth-child(odd) .front:before{background-color:rgba(255, 255, 255, .02);}
+//     section:nth-child(even) .front:before{background-color:rgba(255, 255, 255, .05);}
+//
+// }
+
+//header.dark .main-nav .sub-menu, .block-menu .back{background-color:$dc05;}
+
+
+#meat section:nth-child(1):before {display:none !important}
+
+
+
+
+
+
+
+
+
+
+
+///////////////////////////
+// Banner Video
+///////////////////////////
+
+video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  //z-index: -100;
+ background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+  background-size: cover;
+}
