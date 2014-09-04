@@ -63,6 +63,7 @@
   </head>
 
   <body id="<?php echo poxy_slug(); ?>" <?php body_class(); ?>>
+
     <div id="wrapper">
       <div class="mp-pusher" id="mp-pusher">
         <?php get_template_part( 'inc/menu/menu-mobile' ); ?>

@@ -1,11 +1,15 @@
 // Resize
-//@codekit-prepend "../../../bower_components/jquery-smartresize/jquery.throttledresize.js"
-//@codekit-prepend "../../../bower_components/jquery-smartresize/jquery.debouncedresize.js"
+// @codekit-prepend "../../bower_components/jquery-smartresize/jquery.throttledresize.js"
+// @codekit-prepend "../../bower_components/jquery-smartresize/jquery.debouncedresize.js"
 
-//Way Points
-//@codekit-prepend "../../../bower_components/jquery-waypoints/waypoints.min.js"
+// Way Points
+// @codekit-prepend "../../bower_components/jquery-waypoints/waypoints.min.js"
 
+// Easy Tabs
+// @codekit-prepend "../../bower_components/jquery-hashchange/jquery.ba-hashchange.min.js"
+// @codekit-prepend "../../bower_components/easytabs/lib/jquery.easytabs.min.js"
 
+// @codekit-prepend "../../bower_components/Tabslet/jquery.tabslet.js
 
 ///////////////////////////////
 //  Way Points
@@ -74,7 +78,8 @@ jQuery.noConflict();
 
 jQuery(document).ready(function(){
   setHomeSlideshowHeight();
-  //set_waypoints();
+  set_waypoints();
+
 });
 
 
@@ -84,5 +89,6 @@ jQuery(window).load(function(){
   jQuery(window).bind("throttledresize", function() {
     setHomeSlideshowHeight();
   });
+
 
 });

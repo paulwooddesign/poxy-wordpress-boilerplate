@@ -17,19 +17,12 @@
 </section>
 <?php // MEGA SECTION HEADING */ ?>
 
-<?php //get_template_part( 'part-content' ); ?>
+<?php get_template_part( 'part-content' ); ?>
 
-<?php //* Start Block / ?>
-<section>
-  <div class="site-width">
-    <div class="copy-width">
-      <p><?php poxy_text(0, 50); ?></p>
-    </div>
-  </div>
-</section>
-<?php //End Block */ ?>
 
-<?php //* POXY 3 BLOCK / ?>
+
+
+<?php /* POXY 3 BLOCK / ?>
 <section>
 	<div class="site-width">
 		<div class="copy-width">
@@ -77,20 +70,8 @@
 </section>
 <?php // GAMMA SECTION HEADING */ ?>
 
-<?php //* POXY 4 Block / ?>
-<section>
-	<div class="site-width">
-		<div class="copy-width">
-			<div class="POX A_4_14A14 B_2_12B12 C_2_12C12 D_2_12D12 E_1_11E11 bg-cover">
-				<figure  ><div <?php poxy_bgi_1x1(); ?> class="poxy a_14a14 b_12b12 c_12c12 d_12d12 e_11e11 bg-cover"></div><p><?php poxy_text(0, 20); ?></p></figure>
-        <figure  ><div <?php poxy_bgi_1x1(); ?> class="poxy a_14a14 b_12b12 c_12c12 d_12d12 e_11e11 bg-cover"></div><p><?php poxy_text(0, 20); ?></p></figure>
-        <figure  ><div <?php poxy_bgi_1x1(); ?> class="poxy a_14a14 b_12b12 c_12c12 d_12d12 e_11e11 bg-cover"></div><p><?php poxy_text(0, 20); ?></p></figure>
-        <figure  ><div <?php poxy_bgi_1x1(); ?> class="poxy a_14a14 b_12b12 c_12c12 d_12d12 e_11e11 bg-cover"></div><p><?php poxy_text(0, 20); ?></p></figure>
-			</div>
-		</div>
-	</div>
-</section>
-<?php // POXY 4 BLOCK */ ?>
+<?php get_template_part( 'part-featured-pages' ); ?>
+
 
 <?php //* GAMMA SECTION HEADING / ?>
 <section>

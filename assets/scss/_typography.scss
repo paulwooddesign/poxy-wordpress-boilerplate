@@ -47,8 +47,8 @@ p{line-height: 1.825em; letter-spacing: 0.05em; margin-bottom:$sy;  }
 .custom-bullets li, p {@include zone(E) { font-size: (12px) / $em; }}
 .custom-bullets li, p {@include zone(D) { font-size: (14px) / $em; }}
 .custom-bullets li, p {@include zone(C) { font-size: (14px) / $em; }}
-.custom-bullets li, p {@include zone(B) { font-size: (16px) / $em; }}
-.custom-bullets li, p {@include zone(A) { font-size: (16px) / $em; }}
+.custom-bullets li, p {@include zone(B) { font-size: (14px) / $em; }}
+.custom-bullets li, p {@include zone(A) { font-size: (14px) / $em; }}
 
 
 

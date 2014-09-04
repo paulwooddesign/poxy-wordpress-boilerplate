@@ -1,0 +1,33 @@
+@import "compass";
+@import "compass/css3";
+@import 'settings';
+@import 'poxy-settings';
+//@import "../../bower_components/poxy/poxy/poxy";
+@import "../../bower_components/poxy/poxy/poxy/dev/dev";
+
+
+///////////////////////////////////////////
+// Edit Buttons
+//////////////////////////////////////////
+a.post-edit-link{color:red !important; text-transform:uppercase;}
+a.post-edit-link{opacity:0.40; margin-bottom:$spacer/2; list-style-type:none !important;  clear:both;display:block; width:100%;}
+a.post-edit-link {
+	height:$cols1*0.25;
+	width:$cols1*0.25;
+	content:" ";
+	color:$emphasis;
+	background:red url(admin/images/poxy-edit-icon.png) center center no-repeat;
+	@include background-size(cover);
+	@include transition();
+}
+li a.post-edit-link:hover, a.post-edit-link:hover, a.post-edit-link:hover{opacity:0.8; @include background-size(cover);
+	height:$cols1*0.35;
+	width:$cols1*0.35;
+}
+a.post-edit-link{position:absolute !important; font-size: (16px) / $em !important; top:0 !important; left:-$cols1*0.25 !important; width:$cols1*0.25 !important; height:$cols1*0.25 !important; z-index:800;}
+#home-banner a.post-edit-link{position:relative !important;}
+#home-banner a.post-edit-link{position:relative !important; background-color:$white;}
+#page-head a.post-edit-link, .full-width a.post-edit-link{position:absolute !important;}
+a.post-edit-link.right{margin-right:-$spacer;}
+//a.post-edit-link.top{margin-top:-$spacer/4;}
+#home a.post-edit-link{position:absolute; z-index:9999;}

@@ -1,4 +1,4 @@
-<?php $banner_head_size = "poxy a_11a12 b_11b12"; ?>
+<?php $banner_head_size = "poxy a_11a12 b_11b12 c_11c12 d_11d11 e_11e11"; ?>
 
 <section>
 	<div class="site-width bg-cover relative" <?php poxy_bgi_1x1(2000, 500); ?>>

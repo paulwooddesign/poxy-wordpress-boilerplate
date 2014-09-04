@@ -1,0 +1,136 @@
+$imagedir:'test/images/'; //Image Directory
+
+/////////////////////////////////
+// GRID SETTINGS
+/////////////////////////////////
+$font-size: 16px;// Your base font-size in pixels
+$line: 24px;
+$em: $font-size / 1em;	// Shorthand for outputting ems
+$column: 48px;	// The column-width of your grid in pixels
+$gutter: 36px;
+$gutter-0y: 48px;
+$indent-val: 0;
+
+$gutter: 24px;
+$gutter-y: 24px;
+
+
+/////////////////////////////////
+// ZONE COLORS
+/////////////////////////////////
+$zone-a-color:#00bcd4; // Amber
+$zone-b-color:#5677fc;
+$zone-c-color:#ffc107;
+$zone-d-color:#a6e22a;
+$zone-e-color:#e0276f;
+$zone-f-color:#10e277;
+
+
+//////////////////////////////////////////////////////////////////////
+// BOX RATIOS
+/////////////////////////////////////////////////////////////////////
+$max-copy-width: 18;
+$box-ratio-range: 9; // How many box ratios (ex: 1/2, 1/3, 1/4) This has effect on final CSS size.
+
+// SIZE ARRAY
+$sizes:
+E 1 3 2 3, E 1 1 1 1, E 1 1 1 3, E 1 2 1 3, E 1 2 1 2, E 1 2 1 4, E 1 2 1 5, E 1 1 3 4, E 3 4 3 4, E 2 3 1 1, E 1 1 1 2,
+D 1 3 2 3, D 1 1 1 1, D 1 1 1 3, D 1 2 1 3, D 1 2 1 2, D 1 2 1 4, D 1 2 1 5, D 2 1 1 3, D 3 4 3 4, D 3 4 1 8, D 1 4 1 2, D 2 3 1 1,
+C 1 3 1 3, C 1 1 1 1, C 1 3 2 3, C 1 2 1 3, C 1 2 1 2, C 1 2 1 4, C 1 2 1 5, C 2 1 1 3, C 1 1 1 3, C 1 1 1 8, C 2 3 1 8, C 1 2 1 1, C 1 6 1 6,
+B 1 3 2 3, B 1 1 1 3, B 1 2 1 3, B 1 2 1 2, B 1 2 1 4, B 1 2 1 5, B 2 1 1 3, B 1 1 1 6, B 1 1 1 8, B 1 1 1 1, B 2 5 2 5,
+A 1 1 1 1, A 1 1 2 3, A 1 2 2 3, A 1 1 1 3, A 1 2 1 3, A 1 2 1 2, A 1 2 1 4, A 1 2 1 5, A 2 1 1 3, A 3 4 1 3, A 1 1 1 6, A 1 1 1 8, A 1 2 3 4, A 1 2 2 5, A 3 5 1 1, A 2 5 1 2, A 2 5 2 5;
+
+
+/////////////////////////////////////////////////////////////////////
+// ZONE SETTINGS
+/////////////////////////////////////////////////////////////////////
+//Class Scale Range
+$ratio-range:$box-ratio-range;
+
+$zone-a-max:$max-copy-width;
+$zone-a-min:15;
+
+$zone-b-max:14;
+$zone-b-min:12;
+
+$zone-c-max:11;
+$zone-c-min:10;
+
+$zone-d-max:9;
+$zone-d-min:7;
+
+$zone-e-max:6;
+$zone-e-min:4;
+
+// $ZONE_F_MAX:6;
+// $ZONE_F_MIN:4;
+
+
+//////////////////////////////////////////////////////////////////////
+// FRAMLESS GRID SETTINGS - Joni Korpi - http://framelessgrid.com/
+/////////////////////////////////////////////////////////////////////
+
+$cols1: (1 * ($column + $gutter) - $gutter) / $em;
+$cols2: (2 * ($column + $gutter) - $gutter) / $em;
+$cols3: (3 * ($column + $gutter) - $gutter) / $em;
+$cols4: (4 * ($column + $gutter) - $gutter) / $em;
+$cols5: (5 * ($column + $gutter) - $gutter) / $em;
+$cols6: (6 * ($column + $gutter) - $gutter) / $em;
+$cols7: (7 * ($column + $gutter) - $gutter) / $em;
+$cols8: (8 * ($column + $gutter) - $gutter) / $em;
+$cols9: (9 * ($column + $gutter) - $gutter) / $em;
+$cols10: (10 * ($column + $gutter) - $gutter) / $em;
+$cols11: (11 * ($column + $gutter) - $gutter) / $em;
+$cols12: (12 * ($column + $gutter) - $gutter) / $em;
+$cols13: (13 * ($column + $gutter) - $gutter) / $em;
+$cols14: (14 * ($column + $gutter) - $gutter) / $em;
+$cols15: (15 * ($column + $gutter) - $gutter) / $em;
+$cols16: (16 * ($column + $gutter) - $gutter) / $em;
+$cols17: (17 * ($column + $gutter) - $gutter) / $em;
+$cols18: (18 * ($column + $gutter) - $gutter) / $em;
+$cols19: (19 * ($column + $gutter) - $gutter) / $em;
+$cols20: (20 * ($column + $gutter) - $gutter) / $em;
+$cols21: (21 * ($column + $gutter) - $gutter) / $em;
+$cols22: (22 * ($column + $gutter) - $gutter) / $em;
+$cols23: (23 * ($column + $gutter) - $gutter) / $em;
+$cols24: (24 * ($column + $gutter) - $gutter) / $em;
+$cols25: (25 * ($column + $gutter) - $gutter) / $em;
+$cols26: (26 * ($column + $gutter) - $gutter) / $em;
+$cols27: (27 * ($column + $gutter) - $gutter) / $em;
+$cols28: (28 * ($column + $gutter) - $gutter) / $em;
+$cols29: (29 * ($column + $gutter) - $gutter) / $em;
+$cols30: (30 * ($column + $gutter) - $gutter) / $em;
+$cols31: (31 * ($column + $gutter) - $gutter) / $em;
+$cols32: (32 * ($column + $gutter) - $gutter) / $em;
+$cols33: (33 * ($column + $gutter) - $gutter) / $em;
+$cols34: (34 * ($column + $gutter) - $gutter) / $em;
+$cols35: (35 * ($column + $gutter) - $gutter) / $em;
+$cols36: (36 * ($column + $gutter) - $gutter) / $em;
+$cols37: (37 * ($column + $gutter) - $gutter) / $em;
+$cols38: (38 * ($column + $gutter) - $gutter) / $em;
+$cols39: (39 * ($column + $gutter) - $gutter) / $em;
+$cols40: (40 * ($column + $gutter) - $gutter) / $em;
+$cols41: (41 * ($column + $gutter) - $gutter) / $em;
+
+//Virtical Gutter Width
+//$gx: ((( 1 * ($column + $gutter) - $gutter) / $em) / );
+$gx: ($gutter) / $em;
+//Horizontal Gutter Height
+$gy: ($gutter-y) / $em;
+
+//spacer/Shiv - margin rythem
+$spacer:$gx;
+$sx:$gx;
+$sy:$gy;
+
+
+$s1: ($spacer / 1);
+$s2: ($spacer / 2);
+$s3: ($spacer / 3);
+$s4: ($spacer / 4);
+$s5: ($spacer / 5);
+$s6: ($spacer / 6);
+$s7: ($spacer / 7);
+$s8: ($spacer / 8);
+$s9: ($spacer / 9);
+$s10: ($spacer / 10);

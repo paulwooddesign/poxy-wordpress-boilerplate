@@ -51,7 +51,7 @@ require_once ('bower_components/poxy-wp-multi-post-thumbnails/multi-post-thumbna
 
 // Poxy Core Functions
 require_once ('bower_components/poxy-wordpress-core/poxy-core-master.php');
-
+require_once ('bower_components/poxy-wordpress-core/short-codes.php');
 
 ////////////////////////////////////////////
 // Load Core
@@ -150,9 +150,9 @@ add_action('wp_enqueue_scripts', 'poxy_load_scripts');
 function poxy_load_scripts() {
 
 
-    wp_deregister_script('jquery');
+    //wp_deregister_script('jquery');
     //wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js', false, '1.9.1');
-    wp_register_script('jquery', '//code.jquery.com/jquery-2.0.0.min.js', false, '2.0.0');
+    //wp_register_script('jquery', '//code.jquery.com/jquery-2.0.0.min.js', false, '2.0.0');
     //wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js', false, '1.11.0');
 
 
@@ -161,17 +161,17 @@ function poxy_load_scripts() {
     wp_enqueue_script('jquery');
 
 
-    // !!! Dev Styles
-    // $poxy_dev_styles = of_get_option('poxy_dev_styles');
-    // if($poxy_dev_styles == false) {
-    //     global $user_ID;
-    //     if( $user_ID ) {
-    //         if( current_user_can('level_10') ) {
-    //         wp_enqueue_style('dev_css', get_bloginfo('template_url').'/assets/dev.css', false, '1.0', 'all' );
-    //         //wp_enqueue_script('ggs_grid', get_bloginfo('template_url').'/admin/_DEV/GGS.js', array('jquery'), '1.0.0', true);
-    //         }
-    //     }
-    // }
+    // Dev Styles
+    $poxy_dev_styles = of_get_option('poxy_dev_styles');
+    if($poxy_dev_styles == false) {
+        global $user_ID;
+        if( $user_ID ) {
+            if( current_user_can('level_10') ) {
+            wp_enqueue_style('dev_css', get_bloginfo('template_url').'/dev.css', false, '1.0', 'all' );
+            //wp_enqueue_script('ggs_grid', get_bloginfo('template_url').'/admin/_DEV/GGS.js', array('jquery'), '1.0.0', true);
+            }
+        }
+    }
 
     //Load Minified Styles / lower HTTP reqests this way
     wp_enqueue_script('poxy_js', get_bloginfo('stylesheet_directory').'/scripts-ck.js', array('jquery'), '1.0', true);

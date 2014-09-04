@@ -8,14 +8,17 @@ Author URI: http://workhorse45.com
 Tags: Responsive Poxy
 */
 
-
 //Main Styles
 // @import "bourbon";
 @import "compass/reset";
 @import "compass/utilities/general/clearfix";
 @import "compass";
 @import "compass/css3";
-@import "../../bower_components/poxy/poxy/poxy";
+//@import "../../bower_components/poxy/poxy/poxy";
+
+
+@import 'poxy-settings';
+@import "../../bower_components/poxy/poxy/poxy-grid";
 
 ///////////////////////////
 // Theme Imports
@@ -253,12 +256,6 @@ footer{
 
 
 
-
-
-
-
-
-
 ///////////////////////////
 // Banner Video
 ///////////////////////////
@@ -275,3 +272,10 @@ video {
  background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
   background-size: cover;
 }
+
+
+
+
+
+
+.grid-line{background: red;}

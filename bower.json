@@ -1,7 +1,7 @@
 {
   "name": "poxy-wordpress-boilerplate",
   "private": true,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "poxy-core-master.php",
   "homepage": "https://github.com/paulwooddesign/poxy-wordpress-boilerplate",
   "authors": [
@@ -23,6 +23,9 @@
     "options-framework-theme": "~1.8.0",
     "poxy-wp-multi-post-thumbnails": "*",
     "jquery-waypoints": "~2.0.5",
-    "jquery-smartresize": "*"
+    "jquery-smartresize": "*",
+    "easytabs": "~3.2.0",
+    "jquery-hashchange": "*",
+    "Tabslet": "~1.4.2"
   }
 }

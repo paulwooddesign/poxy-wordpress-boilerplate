@@ -1,0 +1,560 @@
+/* line 9, bower_components/poxy/poxy/poxy/dev/dev.scss */
+#poxy_dev span {
+  font-size: .8em;
+  padding: 0.375em;
+}
+@media (min-width: 16.5em) and (max-width: 30em) {
+  /* line 9, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span {
+    background: #e0276f;
+    color: #fff;
+  }
+}
+@media (min-width: E) {
+  /* line 9, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span {
+    background: #e0276f;
+    color: #fff;
+  }
+}
+@media (min-width: 30em) and (max-width: 43.5em) {
+  /* line 9, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span {
+    background: #a6e22a;
+    color: #fff;
+  }
+}
+@media (min-width: D) {
+  /* line 9, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span {
+    background: #a6e22a;
+    color: #fff;
+  }
+}
+@media (min-width: 43.5em) and (max-width: 52.5em) {
+  /* line 9, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span {
+    background: #ffc107;
+    color: #fff;
+  }
+}
+@media (min-width: C) {
+  /* line 9, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span {
+    background: #ffc107;
+    color: #fff;
+  }
+}
+@media (min-width: 52.5em) and (max-width: 66em) {
+  /* line 9, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span {
+    background: #5677fc;
+    color: #000;
+  }
+}
+@media (min-width: B) {
+  /* line 9, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span {
+    background: #5677fc;
+    color: #000;
+  }
+}
+@media (min-width: 66em) {
+  /* line 9, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span {
+    background: #00bcd4;
+    color: #000;
+  }
+}
+
+/* line 41, bower_components/poxy/poxy/poxy/dev/dev.scss */
+#poxy_dev li:first-child a {
+  line-height: 2em;
+}
+
+/* line 42, bower_components/poxy/poxy/poxy/dev/dev.scss */
+#poxy_dev li:first-child a:before {
+  font-family: sans-serif;
+  font-size: 55%;
+  letter-spacing: .12em;
+  position: absolute;
+  text-transform: uppercase;
+  top: 40%;
+}
+
+@media (min-width: 16.5em) and (max-width: 30em) {
+  /* line 44, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:before {
+    content: 'E ';
+  }
+}
+@media (min-width: E) {
+  /* line 44, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:before {
+    content: 'E ';
+  }
+}
+@media (min-width: 30em) and (max-width: 43.5em) {
+  /* line 44, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:before {
+    content: 'D ';
+  }
+}
+@media (min-width: D) {
+  /* line 44, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:before {
+    content: 'D ';
+  }
+}
+@media (min-width: 43.5em) and (max-width: 52.5em) {
+  /* line 44, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:before {
+    content: 'C ';
+  }
+}
+@media (min-width: C) {
+  /* line 44, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:before {
+    content: 'C ';
+  }
+}
+@media (min-width: 52.5em) and (max-width: 66em) {
+  /* line 44, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:before {
+    content: 'B ';
+  }
+}
+@media (min-width: B) {
+  /* line 44, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:before {
+    content: 'B ';
+  }
+}
+@media (min-width: 66em) {
+  /* line 44, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:before {
+    content: 'A ';
+  }
+}
+
+/* line 75, bower_components/poxy/poxy/poxy/dev/dev.scss */
+.poxy_guides #container {
+  background-position: center center;
+  background-color: rgba(25, 25, 25, 0.3);
+  background-image: linear-gradient(90deg, rgba(20, 20, 20, 0.3) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(20, 20, 20, 0.3) 50%, rgba(20, 20, 20, 0.3) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
+  background-size: 3em 3em;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+/* line 76, bower_components/poxy/poxy/poxy/dev/dev.scss */
+.poxy_guides #fixed_guides {
+  -moz-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  -webkit-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  background: rgba(255, 255, 255, 0.05);
+  left: 50%;
+  z-index: -1;
+}
+/* line 77, bower_components/poxy/poxy/poxy/dev/dev.scss */
+.poxy_guides .grid-line {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+}
+/* line 78, bower_components/poxy/poxy/poxy/dev/dev.scss */
+.poxy_guides .grid-line:before {
+  background: rgba(255, 255, 255, 0.2);
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: 1px;
+}
+/* line 79, bower_components/poxy/poxy/poxy/dev/dev.scss */
+.poxy_guides .grid-line:after {
+  background: rgba(255, 255, 255, 0.2);
+  content: '';
+  height: 100%;
+  position: absolute;
+  right: 0;
+  width: 1px;
+}
+/* line 81, bower_components/poxy/poxy/poxy/dev/dev.scss */
+.poxy_guides .guide14 {
+  margin-left: -0.375em;
+}
+/* line 82, bower_components/poxy/poxy/poxy/dev/dev.scss */
+.poxy_guides .guide24 {
+  margin-right: -0.375em;
+}
+/* line 85, bower_components/poxy/poxy/poxy/dev/dev.scss */
+.poxy_guides #meat .site-width:before {
+  border-bottom: solid 1px rgba(255, 255, 255, 0.15);
+  float: left;
+}
+/* line 86, bower_components/poxy/poxy/poxy/dev/dev.scss */
+.poxy_guides #meat .site-width:after {
+  border-top: solid 1px rgba(255, 255, 255, 0.15);
+  float: left;
+}
+/* line 89, bower_components/poxy/poxy/poxy/dev/dev.scss */
+.poxy_guides #meat .site-width:before,
+.poxy_guides #meat .site-width:after {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 3em) {
+  /* line 166, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:after {
+    content: "cols 1";
+  }
+}
+
+@media (min-width: 7.5em) {
+  /* line 166, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:after {
+    content: "cols 2";
+  }
+}
+
+@media (min-width: 12em) {
+  /* line 166, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:after {
+    content: "cols 3";
+  }
+}
+
+@media (min-width: 16.5em) {
+  /* line 166, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:after {
+    content: "cols 4";
+  }
+}
+
+@media (min-width: 21em) {
+  /* line 166, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:after {
+    content: "cols 5";
+  }
+}
+
+@media (min-width: 25.5em) {
+  /* line 166, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:after {
+    content: "cols 6";
+  }
+}
+
+@media (min-width: 30em) {
+  /* line 166, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:after {
+    content: "cols 7";
+  }
+}
+
+@media (min-width: 34.5em) {
+  /* line 166, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:after {
+    content: "cols 8";
+  }
+}
+
+@media (min-width: 39em) {
+  /* line 166, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:after {
+    content: "cols 9";
+  }
+}
+
+@media (min-width: 43.5em) {
+  /* line 166, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:after {
+    content: "cols 10";
+  }
+}
+
+@media (min-width: 48em) {
+  /* line 166, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:after {
+    content: "cols 11";
+  }
+}
+
+@media (min-width: 52.5em) {
+  /* line 166, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:after {
+    content: "cols 12";
+  }
+}
+
+@media (min-width: 57em) {
+  /* line 166, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:after {
+    content: "cols 13";
+  }
+}
+
+@media (min-width: 61.5em) {
+  /* line 166, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:after {
+    content: "cols 14";
+  }
+}
+
+@media (min-width: 66em) {
+  /* line 166, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:after {
+    content: "cols 15";
+  }
+}
+
+@media (min-width: 70.5em) {
+  /* line 166, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:after {
+    content: "cols 16";
+  }
+}
+
+@media (min-width: 75em) {
+  /* line 166, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:after {
+    content: "cols 17";
+  }
+}
+
+@media (min-width: 79.5em) {
+  /* line 166, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:after {
+    content: "cols 18";
+  }
+}
+
+@media (min-width: 84em) {
+  /* line 166, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:after {
+    content: "cols 19";
+  }
+}
+
+@media (min-width: 88.5em) {
+  /* line 166, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:after {
+    content: "cols 20";
+  }
+}
+
+@media (min-width: 93em) {
+  /* line 166, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:after {
+    content: "cols 21";
+  }
+}
+
+@media (min-width: 97.5em) {
+  /* line 166, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:after {
+    content: "cols 22";
+  }
+}
+
+@media (min-width: 102em) {
+  /* line 166, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:after {
+    content: "cols 23";
+  }
+}
+
+@media (min-width: 106.5em) {
+  /* line 166, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:after {
+    content: "cols 24";
+  }
+}
+
+@media (min-width: 111em) {
+  /* line 166, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:after {
+    content: "cols 25";
+  }
+}
+
+@media (min-width: 115.5em) {
+  /* line 166, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:after {
+    content: "cols 26";
+  }
+}
+
+@media (min-width: 120em) {
+  /* line 166, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:after {
+    content: "cols 27";
+  }
+}
+
+@media (min-width: 124.5em) {
+  /* line 166, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:after {
+    content: "cols 28";
+  }
+}
+
+@media (min-width: 129em) {
+  /* line 166, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:after {
+    content: "cols 29";
+  }
+}
+
+@media (min-width: 133.5em) {
+  /* line 166, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:after {
+    content: "cols 30";
+  }
+}
+
+@media (min-width: 138em) {
+  /* line 166, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:after {
+    content: "cols 31";
+  }
+}
+
+@media (min-width: 142.5em) {
+  /* line 166, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:after {
+    content: "cols 32";
+  }
+}
+
+@media (min-width: 147em) {
+  /* line 166, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:after {
+    content: "cols 33";
+  }
+}
+
+@media (min-width: 151.5em) {
+  /* line 166, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:after {
+    content: "cols 34";
+  }
+}
+
+@media (min-width: 156em) {
+  /* line 166, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:after {
+    content: "cols 35";
+  }
+}
+
+@media (min-width: 160.5em) {
+  /* line 166, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:after {
+    content: "cols 36";
+  }
+}
+
+@media (min-width: 165em) {
+  /* line 166, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:after {
+    content: "cols 37";
+  }
+}
+
+@media (min-width: 169.5em) {
+  /* line 166, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:after {
+    content: "cols 38";
+  }
+}
+
+@media (min-width: 174em) {
+  /* line 166, bower_components/poxy/poxy/poxy/dev/dev.scss */
+  #poxy_dev span:after {
+    content: "cols 39";
+  }
+}
+
+/* line 12, assets/scss/dev.scss */
+a.post-edit-link {
+  color: red !important;
+  text-transform: uppercase;
+}
+
+/* line 13, assets/scss/dev.scss */
+a.post-edit-link {
+  opacity: 0.40;
+  margin-bottom: 0.75em;
+  list-style-type: none !important;
+  clear: both;
+  display: block;
+  width: 100%;
+}
+
+/* line 14, assets/scss/dev.scss */
+a.post-edit-link {
+  height: 0.75em;
+  width: 0.75em;
+  content: " ";
+  color: #c05e43;
+  background: red url(admin/images/poxy-edit-icon.png) center center no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+/* line 23, assets/scss/dev.scss */
+li a.post-edit-link:hover, a.post-edit-link:hover, a.post-edit-link:hover {
+  opacity: 0.8;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 1.05em;
+  width: 1.05em;
+}
+
+/* line 27, assets/scss/dev.scss */
+a.post-edit-link {
+  position: absolute !important;
+  font-size: 1em !important;
+  top: 0 !important;
+  left: -0.75em !important;
+  width: 0.75em !important;
+  height: 0.75em !important;
+  z-index: 800;
+}
+
+/* line 28, assets/scss/dev.scss */
+#home-banner a.post-edit-link {
+  position: relative !important;
+}
+
+/* line 29, assets/scss/dev.scss */
+#home-banner a.post-edit-link {
+  position: relative !important;
+  background-color: white;
+}
+
+/* line 30, assets/scss/dev.scss */
+#page-head a.post-edit-link, .full-width a.post-edit-link {
+  position: absolute !important;
+}
+
+/* line 31, assets/scss/dev.scss */
+a.post-edit-link.right {
+  margin-right: -1.5em;
+}
+
+/* line 33, assets/scss/dev.scss */
+#home a.post-edit-link {
+  position: absolute;
+  z-index: 9999;
+}

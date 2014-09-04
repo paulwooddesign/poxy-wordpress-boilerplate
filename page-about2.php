@@ -1,21 +1,8 @@
 <?php get_header(); ?>
-<section>
-  <div class="site-width bg-cover" <?php poxy_bgi_1x1(2000, 500); ?>>
-    <div class="poy a14 b14"></div>
-  </div>
-</section>
 
-<?php //* EPSILON SECTION HEADING / ?>
-<section>
-	<div class="site-width">
-		<div class="copy-width">
-			<h2>
-				<span class="epsilon">TABS</span>
-			</h2>
-		</div>
-	</div>
-</section>
-<?php // EPSILON SECTION HEADING */ ?>
+<?php //get_template_part( 'part-banner-video' ); ?>
+<?php get_template_part( 'part-page-head' ); ?>
+
 
 
 <?php //get_template_part( 'part-page-head' ); ?>
