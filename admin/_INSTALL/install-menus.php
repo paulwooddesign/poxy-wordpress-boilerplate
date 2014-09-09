@@ -4,7 +4,7 @@
 // Install Menus
 // http://chelladuraii.wordpress.com/2013/07/19/create-menu-on-theme-activation-wordpress/
 /////////////////////////////////////////////////////////////
-add_action('after_switch_theme', 'poxy_install_menus', 10 ,  2);
+//add_action('after_switch_theme', 'poxy_install_menus', 10 ,  2);
 
 function poxy_install_menus ($oldname, $oldtheme = false) {
 /* Create header and footer menus */
@@ -13,25 +13,25 @@ function poxy_install_menus ($oldname, $oldtheme = false) {
     'home'  => 'Home',
     'about'  => 'About',
     'blog'  => 'Blog'
-  ), 
+  ),
 
   'Top Menu' => array(
-    'home' => 'Home', 
+    'home' => 'Home',
     'contact' => 'Contact'
   ),
   'Footer Menu' => array(
     'contact' => 'Contact'
-    //'terms-of-use' => 'Terms of Use', 
+    //'terms-of-use' => 'Terms of Use',
     //'privacy-policy' => 'Privacy Policy'
   ),
   'Footer Small Menu' => array(
     'contact' => 'Contact'
-    //'terms-of-use' => 'Terms of Use', 
+    //'terms-of-use' => 'Terms of Use',
     //'privacy-policy' => 'Privacy Policy'
   ),
   'Mobile Menu' => array(
     'contact' => 'Contact'
-    //'terms-of-use' => 'Terms of Use', 
+    //'terms-of-use' => 'Terms of Use',
     //'privacy-policy' => 'Privacy Policy'
   )
 );
@@ -61,7 +61,7 @@ function poxy_asign_menu_locations () {
 
 
   function wp_menu_id_by_name( $name ) {
-      $menus = get_terms( 'nav_menu' ); 
+      $menus = get_terms( 'nav_menu' );
 
       foreach ( $menus as $menu ) {
           if( $name === $menu->name ) {

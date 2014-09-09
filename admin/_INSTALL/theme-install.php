@@ -24,27 +24,39 @@ function poxy_register_required_plugins() {
         //     'external_url'          => '', // If set, overrides default API URL and points to an external URL
         // ),
 
-        // array(
-        //     'name'                  => 'Ninja Forms', // The plugin name
-        //     'slug'                  => 'ninja-forms', // The plugin slug (typically the folder name)
-        //     'source'                => get_stylesheet_directory() . '/inc/plugins/ninja-forms.zip', // The plugin source
-        //     'required'              => false, // If false, the plugin is only 'recommended' instead of required
-        //     'version'               => '2.2.41', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
-        //     'force_activation'      => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
-        //     'force_deactivation'    => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
-        //     'external_url'          => '', // If set, overrides default API URL and points to an external URL
-        // ),
+        array(
+            'name'                  => 'Rackspace CDN', // The plugin name
+            'slug'                  => 'rackspace-cdn', // The plugin slug (typically the folder name)
+            'source'                => get_stylesheet_directory() . '/inc/plugins/rackspace-cloud-files-cdn.zip', // The plugin source
+            'required'              => false, // If false, the plugin is only 'recommended' instead of required
+            'version'               => '1.2.0', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+            'force_activation'      => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
+            'force_deactivation'    => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
+            'external_url'          => '', // If set, overrides default API URL and points to an external URL
+        ),
 
-        // array(
-        //     'name'                  => 'Regenerate Thumbnails', // The plugin name
-        //     'slug'                  => 'regenerate-thumbnails', // The plugin slug (typically the folder name)
-        //     'source'                => get_stylesheet_directory() . '/inc/plugins/regenerate-thumbnails.zip', // The plugin source
-        //     'required'              => false, // If false, the plugin is only 'recommended' instead of required
-        //     'version'               => '2.2.4', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
-        //     'force_activation'      => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
-        //     'force_deactivation'    => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
-        //     'external_url'          => '', // If set, overrides default API URL and points to an external URL
-        // ),
+
+        array(
+            'name'                  => 'Locatoraid', // The plugin name
+            'slug'                  => 'locatoraid', // The plugin slug (typically the folder name)
+            'source'                => get_stylesheet_directory() . '/inc/plugins/locatoraid-developer-221.zip', // The plugin source
+            'required'              => false, // If false, the plugin is only 'recommended' instead of required
+            'version'               => '2.2.1', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+            'force_activation'      => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
+            'force_deactivation'    => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
+            'external_url'          => '', // If set, overrides default API URL and points to an external URL
+        ),
+
+        array(
+            'name'                  => 'Regenerate Thumbnails', // The plugin name
+            'slug'                  => 'regenerate-thumbnails', // The plugin slug (typically the folder name)
+            'source'                => get_stylesheet_directory() . '/inc/plugins/regenerate-thumbnails.zip', // The plugin source
+            'required'              => false, // If false, the plugin is only 'recommended' instead of required
+            'version'               => '2.2.4', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+            'force_activation'      => false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
+            'force_deactivation'    => false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
+            'external_url'          => '', // If set, overrides default API URL and points to an external URL
+        ),
 
         array(
             'name'                  => 'Meta Box', // The plugin name

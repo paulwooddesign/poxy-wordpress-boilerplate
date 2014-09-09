@@ -19,13 +19,14 @@
     "normalize-scss": "~3.0.1",
     "compass-mixins": "~0.12.3",
     "poxy": "~0.2.0",
-    "poxy-wordpress-core": "~0.0.3",
+    "poxy-wordpress-core": "*",
     "options-framework-theme": "~1.8.0",
     "poxy-wp-multi-post-thumbnails": "*",
     "jquery-waypoints": "~2.0.5",
     "jquery-smartresize": "*",
     "easytabs": "~3.2.0",
     "jquery-hashchange": "*",
-    "Tabslet": "~1.4.2"
+    "Tabslet": "~1.4.2",
+    "jquery-pjax": "~1.9.2"
   }
 }
